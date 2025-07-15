@@ -1,6 +1,3 @@
-// app/page.tsx (Next.js 13+ avec App Router)
-import Link from 'next/link';
-
 export default function Home() {
   return (
     <main className="min-h-screen flex flex-col items-center justify-center bg-gray-100 text-gray-800 px-6">
@@ -10,32 +7,32 @@ export default function Home() {
       </p>
 
       <div className="flex space-x-6">
-        <Link
+        <a
           href="https://github.com/Sl260"
           target="_blank"
           rel="noopener noreferrer"
           className="text-blue-600 hover:underline"
         >
           GitHub
-        </Link>
+        </a>
 
-        <Link
-          href="www.linkedin.com/in/slone-ngambo-mouafo"
+        <a
+          href="https://www.linkedin.com/in/slone-ngambo-mouafo"
           target="_blank"
           rel="noopener noreferrer"
           className="text-blue-600 hover:underline"
         >
           LinkedIn
-        </Link>
+        </a>
 
-        <Link
-          href="/cv.pdf" // Place ton fichier dans /public/cv.pdf
+        <a
+          href="/CV.pdf"
           target="_blank"
           rel="noopener noreferrer"
           className="text-blue-600 hover:underline"
         >
           Mon CV
-        </Link>
+        </a>
       </div>
     </main>
   );
